@@ -50,7 +50,7 @@ app.put('/komik/:id', async (req,res)=> {
         }
 
         await komik.update(data);
-        res.send({ message: 'Kimik berhasik diupdatee', komik});
+        res.send({ message: 'Komik berhasil diupdate', komik});
     }catch (err) {
         res.status(500).send(err);
     }
